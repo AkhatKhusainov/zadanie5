@@ -113,7 +113,7 @@ int main() {
     cout << "zdravstvuyte eto z5" << endl;
     int a=1;
     while (a != 0) {
-        cout << "what task you want to run?(0 - to stop the programm)"<< endl;
+        cout << "what task do you want to run?(0 - to stop the programm)"<< endl;
         
         cin >> a;
         if (a == 1) one();
