@@ -1,0 +1,56 @@
+/*Дана матрица(двумерный массив).Поменять местами две любые ее строки.
+
+В двумерном массиве целых чисел определить, сколько раз в нем встречается элемент со значением X.
+
+Вычислить сумму элементов каждого столбца матрицы(двумерного массива).
+*/
+
+
+#include<iostream>
+using namespace std;
+void one(){
+    cout << "-----first task-----" << endl;
+    int m = 10;
+    int n = 10;
+    int b;
+    cout << "write number e"<< endl;
+    int x;
+        cin >> x;
+        cout << endl;
+    int A[10][10];
+    for (int i = 0; i < 10; ++i) {
+        for (int j = 0; j < 10; ++j)
+            A[i][j] = x + i;
+    } cout << "thats your matrix"<< endl;
+    for (int i = 0; i < 10; ++i) {
+        for (int j = 0; j < 10; ++j)
+            cout << A[i][j] << " ";
+        cout << endl;
+    }
+    cout << "what strings you want rearange?" << endl;
+    int u;
+    int k;
+    cin >> u;
+    cin >> k;
+
+   
+    
+    for (int i = 0; i < 10; ++i) {
+        b = A[u][i];
+        A[u][i] = A[k][i];
+        A[k][i] = b;
+    }
+    for (int i = 0; i < 10; ++i) {
+        for (int j = 0; j < 10; ++j)
+            cout << A[i][j] << " ";
+        cout << endl;
+    }
+    
+}
+
+ 
+int main() {
+    setlocale(LC_ALL, "Russian");
+    one();
+    
+}
